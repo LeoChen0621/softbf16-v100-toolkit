@@ -1,0 +1,15 @@
+# build artifacts
+cudalibs/
+ext_cache/
+dl/
+_*.bat
+
+# python
+__pycache__/
+*.pyc
+*.pyo
+
+# windows / editors
+Thumbs.db
+.vs/
+.vscode/

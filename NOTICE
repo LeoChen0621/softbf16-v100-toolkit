@@ -1,0 +1,20 @@
+softbf16-v100-toolkit
+=====================
+
+This repository contains two kinds of code:
+
+1. vendor/softbf16/
+   Unmodified source of Silvet's Soft-BF16-V100
+   (https://github.com/S-i-l-v-e-t/Soft-BF16-V100), licensed AGPL-3.0.
+   See vendor/softbf16/LICENSE.
+
+2. shim/, tools/, examples/, install.ps1, uninstall.ps1
+   Adapters and utilities written for this toolkit. They link against the
+   kernel in (1) at runtime, so they are distributed under the same
+   AGPL-3.0 license. See LICENSE.
+
+No warranty. This software runs CUDA kernels on hardware the vendor no longer
+supports for bf16/fp8 math; validate numerics for your own use case.
+
+The integration approach in shim/fork_ops.py is derived from
+https://github.com/S-i-l-v-e-t/ComfyUI-V100 (branch v100).
